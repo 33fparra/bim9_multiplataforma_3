@@ -1,0 +1,71 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="presionarMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-menu side="start" menuId="menu" contentId="main">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+      <ion-list>
+        <ion-item routerLink="home">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        <ion-item routerLink="navscan">
+          <ion-icon name="scan" slot="start"></ion-icon>
+          <ion-label>Scan</ion-label>
+        </ion-item>
+        <ion-item routerLink="/cliente">
+          <ion-icon name="ionitron" slot="start">e</ion-icon>
+          <ion-label>Agregar Cliente</ion-label>
+        </ion-item>
+        <ion-item routerLink="/envio">
+          <ion-icon name="jet" slot="start"></ion-icon>
+          <ion-label>Agregar Envío</ion-label>
+        </ion-item>
+        <ion-item routerLink="/producto">
+          <ion-icon name="archive" slot="start"></ion-icon>
+          <ion-label>Agregar Producto</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+
+
+  <h3>{{usuario}} Has ingresado Correctamente!</h3>
+
+    <h3>Nuestros Proyectos</h3><br>
+    <h4>Proyecto N°1</h4>
+    <ion-list>
+      <ion-item>
+    <img src="../assets/img/proy1.png">
+  </ion-item>
+  <h4>Proyecto N°2</h4>
+  <ion-item>
+    <img src="../assets/img/proy2.webp">
+  </ion-item>
+</ion-list>
+  <div>
+    <ion-button expand="full" color="danger" routerLink="/">Cerrar Sesión</ion-button>
+  </div>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-content>

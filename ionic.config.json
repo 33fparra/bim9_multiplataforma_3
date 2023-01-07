@@ -1,0 +1,9 @@
+{
+  "name": "evaluacionTresPipe",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
+

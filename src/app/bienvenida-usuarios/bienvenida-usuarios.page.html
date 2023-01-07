@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+
+      <ion-menu-button menu="menu"></ion-menu-button>
+      <ion-button [routerLink]="['/home']" routerLinkActive="router-link-active">
+        <ion-icon slot="icon-only" name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Bienvenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <app-menu></app-menu>
+
+  <h3>{{usuario}} Has ingresado Correctamente!</h3>
+
+  <h3>Nuestros Proyectos</h3><br>
+  <h4>Proyecto N°1</h4>
+  <ion-list>
+    <ion-item>
+      <img src="../assets/img/proy1.png">
+    </ion-item>
+    <h4>Proyecto N°2</h4>
+    <ion-item>
+      <img src="../assets/img/proy2.png">
+    </ion-item>
+    <h4>Proyecto N°3</h4>
+    <ion-item>
+      <img src="../assets/img/proy3.png">
+    </ion-item>
+  </ion-list>
+  <div>
+    <ion-button expand="full" color="danger" routerLink="/">Cerrar Sesión</ion-button>
+  </div>
+  <ion-footer>
+    <h4>Desarrollado por Pipe Parra</h4>
+  </ion-footer>
+</ion-content>
