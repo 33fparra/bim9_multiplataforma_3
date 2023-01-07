@@ -14,7 +14,7 @@ export class PeticionesService {
   public url:string;
 
   constructor(public _http:HttpClient){
-      this.url="https://dd6fdpobeh.execute-api.us-east-1.amazonaws.com/produccion/";
+      this.url="";  //AQUI ES DONDE VA LO QUE CREE EN AMAZON
   }
   getDespacho():Observable<any>{
     return this._http.get(this.url+'api-eva6/envios/getenvios');
